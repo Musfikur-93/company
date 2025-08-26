@@ -11,13 +11,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ 'backend/assets/images/favicon.ico' }}">
+        <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
 
         <!-- App css -->
-        <link href="{{ 'backend/assets/css/app.min.css' }}" rel="stylesheet" type="text/css" id="app-style" />
+        <link href="{{ asset('backend/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
 
         <!-- Icons -->
-        <link href="{{ 'backend/assets/css/icons.min.css' }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('backend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -57,25 +57,25 @@
         <!-- END wrapper -->
 
         <!-- Vendor -->
-        <script src="{{ 'backend/assets/libs/jquery/jquery.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/simplebar/simplebar.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/node-waves/waves.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/waypoints/lib/jquery.waypoints.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/jquery.counterup/jquery.counterup.min.js' }}"></script>
-        <script src="{{ 'backend/assets/libs/feather-icons/feather.min.js' }}"></script>
+        <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/node-waves/waves.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/jquery.counterup/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/feather-icons/feather.min.js') }}"></script>
 
         <!-- Apexcharts JS -->
-        <script src="{{ 'backend/assets/libs/apexcharts/apexcharts.min.js' }}"></script>
+        <script src="{{ asset('backend/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 
         <!-- for basic area chart -->
         <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
 
         <!-- Widgets Init Js -->
-        <script src="{{ 'backend/assets/js/pages/analytics-dashboard.init.js' }}"></script>
+        <script src="{{ asset('backend/assets/js/pages/analytics-dashboard.init.js') }}"></script>
 
         <!-- App js-->
-        <script src="{{ 'backend/assets/js/app.js' }}"></script>
+        <script src="{{ asset('backend/assets/js/app.js') }}"></script>
 
     </body>
 </html>
