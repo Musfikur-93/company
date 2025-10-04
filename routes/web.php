@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\ReviewController;
 
 Route::get('/', function () {
     return view('home.index');
@@ -20,6 +21,9 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+
+// Admin All Routes
+
 Route::get('/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout');
 Route::post('/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
@@ -33,3 +37,17 @@ Route::middleware('auth')->group(function () {
     Route::post('/password/update', [AdminController::class, 'PasswordUpdate'])->name('admin.password.update');
 
 });
+
+
+Route::middleware('auth')->group(function () {
+
+// Admin Review Section
+    Route::controller(ReviewController::class)->group(function(){
+        Route::get('/all/review', 'AllReview')->name('all.review');
+
+    });
+
+
+});
+
+// Frontend All Routes

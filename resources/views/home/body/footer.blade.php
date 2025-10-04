@@ -5,7 +5,7 @@
           <div class="col-xxl-4 col-xl-12 col-md-6">
             <div class="lonyo-footer-textarea">
               <a href="index.html">
-                <img src="assets/images/logo/logo-dark.svg" alt="">
+                <img src="{{ asset('frontend/assets/images/logo/logo-dark.svg') }}" alt="">
               </a>
               <p>This tool simplifies your spending and saving to organize your money.</p>
               <div class="lonyo-social-wrap">

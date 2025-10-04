@@ -41,21 +41,21 @@
                     </a>
                 </li> -->
 
-                <li class="menu-title">Pages</li>
+                <li class="menu-title">Function Manage</li>
 
                 <li>
                     <a href="#sidebarAuth" data-bs-toggle="collapse">
                         <i data-feather="users"></i>
-                        <span> Authentication </span>
+                        <span> Review Manage </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarAuth">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="auth-login.html" class="tp-link">Log In</a>
+                                <a href="{{ route('all.review') }}" class="tp-link">All Review</a>
                             </li>
                             <li>
-                                <a href="auth-register.html" class="tp-link">Register</a>
+                                <a href="auth-register.html" class="tp-link">Add Review</a>
                             </li>
                         </ul>
                     </div>
