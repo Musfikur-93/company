@@ -97,6 +97,10 @@
         <!-- Datatable Demo App Js -->
         <script src="{{ asset('backend/assets/js/pages/datatable.init.js') }}"></script>
 
+        <!-- Sweetalert js-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="{{ asset('backend/assets/js/code.js') }}"></script>
+
         <!-- Toastr js-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
