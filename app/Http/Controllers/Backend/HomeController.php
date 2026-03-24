@@ -28,7 +28,7 @@ class HomeController extends Controller
             Feature::create([
                 'title' => $request->title,
                 'icon' => $request->icon,
-                'description' => $request->description,
+                'description' => $request->description
             ]);
 
 
@@ -57,7 +57,7 @@ class HomeController extends Controller
             Feature::find($fea_id)->update([
                 'title' => $request->title,
                 'icon' => $request->icon,
-                'description' => $request->description,
+                'description' => $request->description
             ]);
 
 
