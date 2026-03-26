@@ -79,6 +79,13 @@ Route::middleware('auth')->group(function () {
     });
 
 
+    // Admin Clarifie Section
+    Route::controller(HomeController::class)->group(function(){
+        Route::get('/get/clarifie', 'GetClarifie')->name('get.clarifie');
+
+    });
+
+
 
 });
 

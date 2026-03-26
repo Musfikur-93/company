@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Feature;
+use App\Models\clarifie;
 
 class HomeController extends Controller
 {
@@ -81,6 +82,17 @@ class HomeController extends Controller
         );
 
         return redirect()->back()->with($notification);
+
+    } // End Method
+
+
+
+    // ------------------------------ Clarifies ----------------------------------
+
+    public function GetClarifie(){
+
+        $clarifie = clarifie::find(1);
+        return view('admin.backend.clarifie.get_clarifie',compact('clarifie'));
 
     } // End Method
 
