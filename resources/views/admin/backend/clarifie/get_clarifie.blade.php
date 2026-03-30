@@ -34,10 +34,10 @@
                                                     </div>
                                                 </div>
 
-                                                <form action="{{ route('update.slider') }}" method="POST" enctype="multipart/form-data">
+                                                <form action="{{ route('update.clarifie') }}" method="POST" enctype="multipart/form-data">
                                                     @csrf
 
-                                                {{-- <input type="hidden" name="id" value="{{ $slider->id }}"> --}}
+                                                <input type="hidden" name="id" value="{{ $clarifie->id }}">
 
                                                 <div class="card-body">
                                                     <div class="form-group mb-3 row">
