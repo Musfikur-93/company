@@ -34,7 +34,7 @@
                                                     </div>
                                                 </div>
 
-                                                <form action="{{ route('update.clarifie') }}" method="POST" enctype="multipart/form-data">
+                                                <form action="{{ route('update.usability') }}" method="POST" enctype="multipart/form-data">
                                                     @csrf
 
                                                 <input type="hidden" name="id" value="{{ $usability->id }}">

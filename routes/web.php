@@ -89,7 +89,7 @@ Route::middleware('auth')->group(function () {
     // Admin Usability Section
     Route::controller(HomeController::class)->group(function(){
         Route::get('/get/usability', 'GetUsability')->name('get.usability');
-        Route::post('/update/clarifie', 'UpdateClarifie')->name('update.clarifie');
+        Route::post('/update/usability', 'UpdateUsability')->name('update.usability');
     });
 
 
