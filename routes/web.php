@@ -83,7 +83,13 @@ Route::middleware('auth')->group(function () {
     Route::controller(HomeController::class)->group(function(){
         Route::get('/get/clarifie', 'GetClarifie')->name('get.clarifie');
         Route::post('/update/clarifie', 'UpdateClarifie')->name('update.clarifie');
+    });
 
+
+    // Admin Usability Section
+    Route::controller(HomeController::class)->group(function(){
+        Route::get('/get/usability', 'GetUsability')->name('get.usability');
+        Route::post('/update/clarifie', 'UpdateClarifie')->name('update.clarifie');
     });
 
 

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Clarifie extends Model
+class Usability extends Model
 {
     protected $guarded = [];
 }

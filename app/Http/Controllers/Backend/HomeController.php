@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Feature;
-use App\Models\clarifie;
+use App\Models\Clarifie;
+use App\Models\Usability;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 
@@ -93,7 +94,7 @@ class HomeController extends Controller
 
     public function GetClarifie(){
 
-        $clarifie = clarifie::find(1);
+        $clarifie = Clarifie::find(1);
         return view('admin.backend.clarifie.get_clarifie',compact('clarifie'));
 
     } // End Method
@@ -102,7 +103,7 @@ class HomeController extends Controller
     public function UpdateClarifie(Request $request){
 
         $clar_id = $request->id;
-        $clarifie = clarifie::find($clar_id);
+        $clarifie = Clarifie::find($clar_id);
 
         if ($request->file('image')) {
             $image = $request->file('image');
@@ -116,7 +117,7 @@ class HomeController extends Controller
                 @unlink(public_path($clarifie->image));
             }
 
-            clarifie::find($clar_id)->update([
+            Clarifie::find($clar_id)->update([
                 'title' => $request->title,
                 'description' => $request->description,
                 'image' => $save_url
@@ -131,7 +132,7 @@ class HomeController extends Controller
 
         }else{
 
-            clarifie::find($clar_id)->update([
+            Clarifie::find($clar_id)->update([
                 'title' => $request->title,
                 'link' => $request->link,
                 'description' => $request->description,
@@ -145,6 +146,17 @@ class HomeController extends Controller
             return redirect()->back()->with($notification);
         }
 
+
+    } // End Method
+
+
+
+    // ------------------------------ Usability ----------------------------------
+
+    public function GetUsability(){
+
+        $usability = Usability::find(1);
+        return view('admin.backend.usability.get_usability',compact('usability'));
 
     } // End Method
 
